@@ -6,7 +6,7 @@ docker-dev-build:
 
 .PHONY: docker
 docker:
-	docker build -t oryd/kratos-selfservice-ui-node:latest .
+	docker build -t asifshiraz/kratos-selfservice-ui-node:latest .
 
 .PHONY: build-sdk
 build-sdk:
