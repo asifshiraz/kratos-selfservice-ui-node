@@ -4,10 +4,10 @@
   "exec": "ts-node ./src/index.ts",
   "env": {
     "CSRF_COOKIE_NAME": "ax-csrf-cookie",
-    "COOKIE_SECRET": "I_AM_VERY_SECRET",
-    "CSRF_COOKIE_SECRET": "I_AM_VERY_SECRET_TOO",
+    "COOKIE_SECRET": "rihUUmY42QeoRJe6",
+    "CSRF_COOKIE_SECRET": "rihUUmY42QeoRJe6",
     "DANGEROUSLY_DISABLE_SECURE_CSRF_COOKIES": "true",
-    "KRATOS_PUBLIC_URL": "https://auth.kandiarobitcoin.com",
+    "KRATOS_PUBLIC_URL": "https://kratos.kandiarobitcoin.com",
     "KRATOS_ADMIN_URL": "http://localhost:4434"
   }
 }
