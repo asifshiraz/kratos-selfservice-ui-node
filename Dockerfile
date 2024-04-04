@@ -7,11 +7,11 @@ ARG LINK=no
 
 RUN adduser -S ory -D -u 10000 -s /bin/nologin
 
-ENV CSRF_COOKIE_NAME ax-csrf-cookie
+ENV CSRF_COOKIE_NAME auth.kandiarobitcoin.com-csrf-cookie
 ENV COOKIE_SECRET bt4rgjykKNxVacHVT94zT34hKQKghNZk
 ENV CSRF_COOKIE_SECRET bt4rgjykKNxVacHVT94zT34hKQKghNZk
 ENV DANGEROUSLY_DISABLE_SECURE_CSRF_COOKIES true
-ENV KRATOS_PUBLIC_URL https://kratos.kandiarobitcoin.com
+ENV KRATOS_PUBLIC_URL https://auth.kandiarobitcoin.com
 ENV KRATOS_ADMIN_URL http://localhost:4434
 
 COPY package.json .
