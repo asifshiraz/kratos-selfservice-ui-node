@@ -51,6 +51,7 @@ export const createLoginRoute: RouteCreator =
       logger.debug("No flow ID found in URL query initializing login flow", {
         query: req.query,
       })
+      console.log("We are here")
       res.redirect(303, initFlowUrl)
       return
     }
@@ -95,6 +96,8 @@ export const createLoginRoute: RouteCreator =
           const baseUrl = req.path.split("/")
           // get rid of the last part of the path (e.g. "login")
           baseUrl.pop()
+
+          console.log("Here 2")
 
           // redirect to the verification page with the custom message
           res.redirect(
@@ -168,6 +171,8 @@ export const createLoginRoute: RouteCreator =
         if (flow.requested_aal === "aal2" || flow.refresh) {
           logoutUrl = await getLogoutUrl(flow)
         }
+
+        console.log("here 3")
 
         res.render("login", {
           nodes: flow.ui.nodes,

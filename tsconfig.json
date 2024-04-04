@@ -10,7 +10,8 @@
     "strict": true,
     "typeRoots": ["./types"],
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "sourceMap": true
   },
   "exclude": ["contrib"]
 }
